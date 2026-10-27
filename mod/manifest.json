@@ -1,0 +1,14 @@
+{
+  "id": "neo.space-map",
+  "name": "容量マップ",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "entry": "index.js",
+  "uses": ["entries", "size", "folderSize", "modified", "icons"],
+  "location": "folder",
+  "description": "フォルダの中身を、大きさに比例した四角で敷き詰めて見せる（ツリーマップ）。何が容量を食っているかが一目でわかり、そのまま開く・ごみ箱へ送る（本体が確認）ができます。フォルダの大きさの計算は重いので、大きなフォルダでは少し時間がかかります。通信はしません",
+  "settings": [
+    { "key": "maxTiles", "label": "描く四角の最大数（残りは「その他」にまとめる）", "type": "number", "default": 250, "min": 20, "max": 800, "step": 10 },
+    { "key": "showHidden", "label": "隠しファイルも含める", "type": "boolean", "default": false }
+  ]
+}
